@@ -14,4 +14,6 @@ function onChange(event) {
 	console.log(event.target.value);
 }
 
+onChange = debounce(onChange, 300)
+
 document.querySelector('.debounce').addEventListener('keyup', onChange)
